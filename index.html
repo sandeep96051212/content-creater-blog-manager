@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Creator Blog Manager</title>
+    <style>
+      /* Reset & Base Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+        background: radial-gradient(circle at 50% 50%, #1f1c2c 0%, #928dab 100%);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+      
+      /* Main Container - Glassmorphism Effect */
+      #root {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 24px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        max-width: 1200px;
+        min-height: calc(100vh - 40px);
+        padding: 40px;
+        transition: all 0.3s ease;
+      }
+      
+      /* Heading Style */
+      h1 {
+        color: #1f1c2c;
+        font-size: 2.5rem;
+font-weight: 800;
+margin-bottom: 20px;
+letter-spacing: -0.5px;
+background: linear-gradient(45deg, #ff0000, #0000ff);
+-webkit-background-clip: text;
+background-clip: text; 
+-webkit-text-fill-color: transparent;
+color: transparent;
+      }
+      
+      /* Modern Button */
+      button {
+        background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+        color: white;
+        border: none;
+        border-radius: 12px;
+        padding: 12px 24px;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(0, 114, 255, 0.3);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      
+      button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(0, 114, 255, 0.5);
+        background: linear-gradient(135deg, #0072ff 0%, #00c6ff 100%);
+      }
+
+      button:active {
+        transform: translateY(1px);
+      }
+      
+      /* Sleek Input Fields */
+      input {
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 15px;
+        border: 2px solid #e2e8f0;
+        border-radius: 12px;
+        background-color: #f8fafc;
+        color: #334155;
+        outline: none;
+        transition: all 0.3s ease;
+      }
+      
+      input:focus {
+        border-color: #0072ff;
+        background-color: #ffffff;
+        box-shadow: 0 0 0 4px rgba(0, 114, 255, 0.15);
+      }
+
+      /* Placeholders */
+      input::placeholder {
+        color: #94a3b8;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.jsx"></script>
+  </body>
+</html>
